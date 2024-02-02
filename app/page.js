@@ -76,7 +76,7 @@ export default function Home() {
   {/* Informations textuelles */}
   <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', p: 2 }}>
     <Typography variant="h5">{weather.name}</Typography>
-    <Typography variant="h6">{Math.round(weather.main && weather.main.temp - 273.15)}°C</Typography>
+    <Typography variant="h2">{Math.round(weather.main && weather.main.temp - 273.15)}°C</Typography>
     <Typography variant="h6">Humidité: {weather.main && weather.main.humidity}%</Typography>
     <Typography variant="h6">{weather.weather && weather.weather[0].description}</Typography>
   </Box>
